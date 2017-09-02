@@ -1,0 +1,159 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ChallengeLaravel",
+		"_postman_id": "fa27f9c9-e7b6-f1e1-1929-cc735859c6f9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "storeAppointment",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/v1/appointments",
+				"method": "POST",
+				"header": [
+					{
+						"key": "started_at",
+						"value": "2017-08-24 10:30:00",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "started_at",
+							"value": "2017-08-24 10:30:00",
+							"type": "text"
+						},
+						{
+							"key": "ended_at",
+							"value": "2017-08-24 11:30:00",
+							"type": "text"
+						},
+						{
+							"key": "contact_info",
+							"value": "Daniel",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "IndexAppointment",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/v1/appointments",
+				"method": "GET",
+				"header": [
+					{
+						"key": "started_at",
+						"value": "2017-08-24 10:30:00",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "started_at",
+							"value": "2017-08-24 10:30:00",
+							"type": "text"
+						},
+						{
+							"key": "ended_at",
+							"value": "2017-08-24 11:30:00",
+							"type": "text"
+						},
+						{
+							"key": "contact_info",
+							"value": "Daniel",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAppointment",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/v1/appointments/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "started_at",
+						"value": "2017-08-24 10:30:00",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "started_at",
+							"value": "2017-08-28 11:00:00",
+							"type": "text"
+						},
+						{
+							"key": "ended_at",
+							"value": "2017-08-28 10:00:00",
+							"type": "text"
+						},
+						{
+							"key": "contact_info",
+							"value": "Daniel",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateAppointment",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/v1/appointments/1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "started_at",
+						"value": "2017-08-24 10:30:00",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "started_at",
+							"value": "2017-08-28 11:00:00",
+							"type": "text"
+						},
+						{
+							"key": "ended_at",
+							"value": "2017-08-28 10:00:00",
+							"type": "text"
+						},
+						{
+							"key": "contact_info",
+							"value": "Daniel",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
